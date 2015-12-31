@@ -72,3 +72,6 @@ deploy:
   repo:
     github: git@github.com:vmlinz/vmlinz.github.io.git,master
 
+# Comment services
+disqus_shortname: logs-from-zaicheng
+
