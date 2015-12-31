@@ -42,11 +42,9 @@ Once you have hexo installed, you can use following commands to initialize the t
 
 ### Writing ###
 
-new post
-    hexo new \[layout\] TITLE
+* new post, `hexo new \[layout\] TITLE`
 
-publish a draft
-    hexo publish \[layout\] TITLE
+* publish a draft, `hexo publish \[layout\] TITLE`
 
 ## Deploy hexojs to github and gitcafe ##
 
@@ -63,7 +61,7 @@ with these commands, you can deploy the web site to the server configured.
 * [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git)
 * [hexo-deployer-heroku](https://github.com/hexojs/hexo-deployer-heroku)
 * [hexo-deployer-rsync](https://github.com/hexojs/hexo-deployer-rsync)
-* others
+* many others
 
 ## Deploy hexojs auto builder with travis ci ##
 
