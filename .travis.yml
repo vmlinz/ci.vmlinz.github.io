@@ -7,28 +7,38 @@ language: node_js
 sudo: false
 
 node_js:
-- '5.1'
+  - "4"
 
+cache:
+  apt: true
+  directories:
+    - node_modules
+env:
+  - CXX=g++-4.8
 addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
   ssh_known_hosts:
-  - github.com
-  - gitcafe.com
+    - github.com
+    - gitcafe.com
 
 before_install:
-- openssl aes-256-cbc -K $encrypted_3fec25997f5e_key -iv $encrypted_3fec25997f5e_iv -in .travis/ssh_key.enc -out ~/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa
-- eval $(ssh-agent)
-- ssh-add ~/.ssh/id_rsa
-- cp .travis/ssh_config ~/.ssh/config
-- git config --global user.name "Blog Bot"
-- git config --global user.email vmlinz+blogbot@gmail.com
-- git clone -b master git@github.com:vmlinz/vmlinz.github.io.git .deploy_git
+  - openssl aes-256-cbc -K $encrypted_3fec25997f5e_key -iv $encrypted_3fec25997f5e_iv -in .travis/ssh_key.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/id_rsa
+  - cp .travis/ssh_config ~/.ssh/config
+  - git config --global user.name "Blog Bot"
+  - git config --global user.email vmlinz+blogbot@gmail.com
+  - git clone -b master git@github.com:vmlinz/vmlinz.github.io.git .deploy_git
 
 install:
-- npm install hexo-cli -g
-- npm install
+  - npm install hexo-cli -g
+  - npm install
 
 script:
-- hexo g
-- hexo d
-
+  - hexo g
+  - hexo d
