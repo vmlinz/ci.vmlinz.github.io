@@ -75,3 +75,9 @@ deploy:
 # Comment services
 disqus_shortname: logs-from-zaicheng
 
+# Social services
+social:
+  github: https://github.com/vmlinz
+  twitter: https://twitter.com/vmlinz
+  zhihu: https://zhihu.com/vmlinz
+
