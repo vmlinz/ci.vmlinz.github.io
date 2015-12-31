@@ -71,5 +71,4 @@ deploy:
   type: git
   repo:
     github: git@github.com:vmlinz/vmlinz.github.io.git,master
-    gitcafe: git@gitcafe.com:vmlinz/vmlinz.git,gitcafe-pages
 
