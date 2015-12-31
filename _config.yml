@@ -70,5 +70,6 @@ theme: next
 deploy:
   type: git
   repo:
-    github: https://github.com/vmlinz/vmlinz.github.io,master
-    gitcafe: https://gitcafe.com/vmlinz/vmlinz.git,gitcafe-pages
+    github: git@github.com:vmlinz/vmlinz.github.io.git,master
+    gitcafe: git@gitcafe.com:vmlinz/vmlinz.git,gitcafe-pages
+
