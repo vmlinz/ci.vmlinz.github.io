@@ -1,9 +1,15 @@
-title: setup-a-blog-with-hexojs-and-travis
+title: Setup a blog with hexojs and travis
 date: 2015-12-31 23:46:12
 tags:
 ---
 
 # Introduction #
+
+* Hexo is a fast and powerful site generator designed specifically for personal blogging. There is a lot of plugins to make it even powerful.
+* With the power of travis, you can automate the site generating progress and separate the process of editing from publishing.
+* You can deploy your generated site to github pages, a free and easy-to-use page hosting service.
+
+This article is going to instruct you to setup a blog with these handy tools.
 
 # Contents #
 
