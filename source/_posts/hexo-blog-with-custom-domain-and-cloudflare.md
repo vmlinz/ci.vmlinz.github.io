@@ -8,12 +8,12 @@ tags:
 
 # Introduction #
 
-The [previous blog](https://zaicheng.me/2015/12/31/setup-a-blog-with-hexojs-and-travis/) shows you how to setup a blog with hexo and github pages. Here we are going to move it further.
+The [previous blog](https://zaicheng.me/2015/12/31/setup-a-blog-with-hexojs-and-travis/) shows you how to setup a blog with hexo and github pages. Here we are going to make it further.
 
 * Setup custom domain name for your blog
-* Setup cloud flare for content caching and https support
+* Setup cloudflare for content caching and https support
 * Setup apex domain name and a `www` sub domain
-* Setup cloud flare dns records with flattening CNAME record
+* Setup cloudflare dns records with flattening CNAME record
 * Configure cloudflare
   * ipv6
   * hsts
@@ -46,11 +46,11 @@ The [previous blog](https://zaicheng.me/2015/12/31/setup-a-blog-with-hexojs-and-
 * add a CNAME record of `zaicheng.me, vmlinz.github.io`, NOTE: this is not an effective CNAME record by the dns spec, but cloudflare recognize it.
 
 ### Set up cloudflare ###
-Let's set up cloudflare to caching the content and turn on hsts for the site.
+Let's set up cloudflare to cache the content and turn on hsts for the site.
 
 * Follow the guide to scan the original dns records.
 * Migrate the dns servers from the domain name register panel to the cloudflare ones to get it work.
-* Set up dns to add a record of flattening CNAME, which means to point *zaicheng.me* to *vmlinz.github.io*. NOTE: this is cloudflare specific dns function which is breaking the limits of dns spec.
+* Set up dns to add a record of flattening CNAME, which means to point *zaicheng.me* to *vmlinz.github.io*. NOTE: this is a cloudflare specific dns function which breaks the limits of dns spec.
 * Setup the crypto to turn on full ssl
 * Turn on HSTS under crypto, turn on `include subdomains` and `No-sniff`
 * Turn on ipv6 compatibility
@@ -59,7 +59,7 @@ Let's set up cloudflare to caching the content and turn on hsts for the site.
 
 * cloudflare will provision your ssl cert after about 24 hours
 * flattening CNAME for apex domain is not supported by all the dns servers
-* full ssl will only work when I use flattening CNAME, if I register a dns A record of `zaicheng.me` pointing to the github ips(192.30.252.153,192.30.252.154), then I cannot use full ssl.
+* full ssl will only work when I use flattening CNAME, if I add a dns A record of `zaicheng.me` pointing to the github ips(192.30.252.153,192.30.252.154), then I cannot use full ssl.
 
 # References #
 
@@ -69,3 +69,4 @@ Let's set up cloudflare to caching the content and turn on hsts for the site.
 * [github pages jekyll cloudflare](https://stirling.co/blog/github-pages-jekyll-cloudflare/)
 * [free ssl hosting](http://blog.differential.com/free-ssl-hosting)
 * [apex domains](https://devcenter.heroku.com/articles/apex-domains)
+
