@@ -1,6 +1,9 @@
 title: Rails active record associations
 date: 2015-12-24 23:48:24
 tags:
+  - rails
+  - ruby
+  - active model
 ---
 
 最近在学习"APIs on Rails"这本书，这是学习第八章"Placing Orders"的学习笔记。

@@ -1,6 +1,10 @@
 title: Setup a blog with hexojs and travis
 date: 2015-12-31 23:46:12
-tags:
+tags: 
+  - hexo
+  - travis
+  - blog
+  - pages
 ---
 
 # Introduction #
@@ -10,6 +14,8 @@ tags:
 * You can deploy your generated site to github pages, a free and easy-to-use page hosting service.
 
 This article is going to instruct you to setup a blog with these handy tools.
+
+<!--more-->
 
 # Contents #
 
@@ -22,15 +28,15 @@ This article is going to instruct you to setup a blog with these handy tools.
 
 ### Install from npm ###
 
-    npm install -g hexo-cli
+  npm install -g hexo-cli
 
 ### Basic setup ###
 
 Once you have hexo installed, you can use following commands to initialize the target folder
 
-    hexo init BLOG_DIR
-    cd BLOG_DIR
-    npm install
+  hexo init BLOG_DIR
+  cd BLOG_DIR
+  npm install
 
 ### Customization ###
 
@@ -42,9 +48,8 @@ Once you have hexo installed, you can use following commands to initialize the t
 
 ### Writing ###
 
-* new post, `hexo new \[layout\] TITLE`
-
-* publish a draft, `hexo publish \[layout\] TITLE`
+* new post, hexo new \[layout\] TITLE
+* publish a draft, hexo publish \[layout\] TITLE
 
 ## Deploy hexojs to github and gitcafe ##
 
@@ -54,14 +59,14 @@ Once you have hexo installed, you can use following commands to initialize the t
 
 with these commands, you can deploy the web site to the server configured.
 
-    hexo deploy
+  hexo deploy
 
 ### Methods ###
 
 * [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git)
 * [hexo-deployer-heroku](https://github.com/hexojs/hexo-deployer-heroku)
 * [hexo-deployer-rsync](https://github.com/hexojs/hexo-deployer-rsync)
-* many others
+* others
 
 ## Deploy hexojs auto builder with travis ci ##
 
