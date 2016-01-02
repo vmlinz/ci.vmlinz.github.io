@@ -3,7 +3,6 @@ date: 2015-12-31 23:46:12
 tags: 
   - hexo
   - travis
-  - blog
   - pages
 ---
 
