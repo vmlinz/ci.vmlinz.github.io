@@ -55,7 +55,7 @@ creates seven different routes in your application, all mapping to the Photos co
 |         | PUT    |/users/:id(.:format)      |users#update|
 |         | DELETE |/users/:id(.:format)      |users#destroy|
 
-* NOTE: there is a singular resource: `resources :user` and in this case you refer to only one resource and don't need to identify different resources of it.
+_NOTE_: There is a singular resource: `resources :user` and in this case you refer to only one resource and don't need to identify different resources of it.
 
 ### path and URL helpers ###
 
@@ -79,7 +79,6 @@ You can use namespace in resources to group a set of controllers under a namespa
 
 Then you can declare route as:
 
-
 ```
 namespace :admin do
 	resources :articles, :comments
@@ -90,8 +89,7 @@ And all the urls of the controllers will be prefixed with `/admin`
 
 #### scope ####
 
-You can use scope when you want to route `/admin/articles` to ArticlesController instead of Admin::ArticlesController.
-
+You can use scope when you want to route `/admin/articles` to ArticlesController instead of `Admin::ArticlesController`.
 
 ```
 scope '/admin' do
@@ -107,15 +105,7 @@ resources :articles, path: '/admin/articles'
 
 ### nested routes ###
 
-Nested routes allow you to represent resources that are logically children of other resources.
-
-### adding more restful actions ###
-
-## Non-resourceful routing ##
-
-In case of URLs which are not fit into resourceful abstraction, rails supports routing for arbitrary URLs.
-
-for models:
+Nested routes allow you to represent resources that are logically children of other resources, for models:
 
 ```
 class Magazine < ActiveRecord::Base
