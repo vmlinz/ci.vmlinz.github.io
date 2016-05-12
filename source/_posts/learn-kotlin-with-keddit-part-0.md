@@ -12,8 +12,6 @@ tags:
 > 原文作者：[Juancho Saravia](https://twitter.com/juanchosaravia)
 > 授权译者：[Nick Qi](https://zaicheng.me)
 
-![learn-kotlin-with-keddit](https://cdn-images-1.medium.com/max/2000/1*J80hdZ1WrspqQmsogfQFrw.png)
-
 # 内容
 
 * [导言：关于这个系列文章的一点点](https://medium.com/@juanchosaravia/learn-kotlin-while-developing-an-android-app-introduction-567e21ff9664)
@@ -40,8 +38,6 @@ tags:
 ## 我们将要开发的应用：Keddit
 
 我们将要开发的应用是一个简单的Reddit客户端。它会展示来自Reddit的最近新闻，支持通过下拉无限滚动显示更多新闻，支持显示标题、图片、评论数量、发布事件以及新闻的作者。
-
-![app-keddit](https://cdn-images-1.medium.com/max/800/1*LjA2bmJis-81xzwmcbcrZg.gif)
 
 ### 我们将会使用的第三方库:
 
