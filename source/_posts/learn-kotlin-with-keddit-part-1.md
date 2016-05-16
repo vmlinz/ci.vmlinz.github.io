@@ -96,6 +96,8 @@ tags:
 
 接下来会弹出一个消息，让我们可以选择想要转换的模块以及Kotlin插件的版本（这里选择最新的）。
 
+![kotlin-part1-11-reconfigure-kotlin-version](/images/kotlin-part1-11-reconfigure-kotlin-version.png)
+
 你会发现模块中的build.gradle被更新了。文件会包含一些类似下面的新配置：
 
     apply plugin: 'kotlin-android'
@@ -121,7 +123,7 @@ At the beginning you had to do this manually but now with the Plugin this is rea
 
 现在一切就绪，我们可以用MainActivity.kt这个文件来运行应用了。
 
-![kotlin-part1-11-reconfigure-kotlin-version](/images/kotlin-part1-11-reconfigure-kotlin-version.png)
+![kotlin-part1-12-keddit-run](/images/kotlin-part1-12-keddit-run.png)
 
 ## 代码仓库
 
