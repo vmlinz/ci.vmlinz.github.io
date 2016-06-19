@@ -1,4 +1,4 @@
-title: react-native-initial-setup
+title: React Native App initial setup
 date: 2016-06-20 02:57:49
 tags:
     - react-native
@@ -7,6 +7,7 @@ tags:
     - editorconfig
     - eslint
     - flow
+---
 
 # React Native app initial setup
 
